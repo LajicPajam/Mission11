@@ -1,0 +1,98 @@
+.bookstore-shell {
+  min-height: 100vh;
+}
+
+.hero-panel,
+.controls-panel,
+.book-card,
+.status-card {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 24px;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.08);
+}
+
+.hero-panel {
+  padding: 2rem;
+}
+
+.controls-panel {
+  padding: 1.5rem;
+}
+
+.eyebrow {
+  color: #9a3412;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.results-chip {
+  display: inline-block;
+  background: #fff7ed;
+  border: 1px solid #fdba74;
+  border-radius: 999px;
+  color: #9a3412;
+  font-weight: 600;
+  padding: 0.8rem 1rem;
+}
+
+.book-card {
+  padding: 1.5rem;
+}
+
+.book-category {
+  color: #9a3412;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.price-pill {
+  background: #1d4ed8;
+  border-radius: 999px;
+  color: white;
+  font-weight: 700;
+  padding: 0.55rem 0.9rem;
+  white-space: nowrap;
+}
+
+.book-grid {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.book-grid > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.label {
+  color: #64748b;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.status-card {
+  padding: 2rem;
+  text-align: center;
+}
+
+.error-card {
+  color: #b91c1c;
+}
+
+.pagination .page-link {
+  border-radius: 12px;
+  border: none;
+  color: #0f172a;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #0f172a;
+}
