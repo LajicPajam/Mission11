@@ -40,8 +40,10 @@ app.MapGet("/books", async (BookstoreContext db, int pageSize = 5, int pageNum =
         pageNum = 1;
     }
 
+    // Only allow the two supported title sort directions from the UI.
     var normalizedSortOrder = sortOrder.Equals("desc", StringComparison.OrdinalIgnoreCase) ? "desc" : "asc";
 
+    // Apply sorting before Skip/Take so each page stays consistent.
     var booksQuery = normalizedSortOrder == "desc"
         ? db.Books.AsNoTracking().OrderByDescending(book => book.Title)
         : db.Books.AsNoTracking().OrderBy(book => book.Title);

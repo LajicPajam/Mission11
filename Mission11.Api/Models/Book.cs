@@ -31,5 +31,6 @@ public class Book
 
     [Required]
     [Column(TypeName = "REAL")]
+    // SQLite stores this as REAL, so the CLR type stays numeric for sorting and formatting.
     public double Price { get; set; }
 }
